@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2220b5dec4fe488d8764c86e28a0fc87 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2220b5dec4fe488d8764c86e28a0fc87" ></div>
+        
+</body>
+<script>    
+    
+            var map_2220b5dec4fe488d8764c86e28a0fc87 = L.map(
+                "map_2220b5dec4fe488d8764c86e28a0fc87",
+                {
+                    center: [39.0, 15.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_09cd61730a574364961ab34e5749f55a = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2220b5dec4fe488d8764c86e28a0fc87);
+        
+    
+            var feature_group_ecad8719a5554f66821ec04e5705f25b = L.featureGroup(
+                {}
+            ).addTo(map_2220b5dec4fe488d8764c86e28a0fc87);
+        
+    
+            var marker_c15e901b0e884f91b8c1c0c25f3a7397 = L.marker(
+                [37.851173, 15.29949],
+                {}
+            ).addTo(feature_group_ecad8719a5554f66821ec04e5705f25b);
+        
+    
+            var icon_dd3294b9e6cd43818988409a9367693b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_c15e901b0e884f91b8c1c0c25f3a7397.setIcon(icon_dd3294b9e6cd43818988409a9367693b);
+        
+    
+        var popup_496e757b7ffa4582943577cf36cd82c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c9f6815448049c9b3b73da71ac7be32 = $(`<div id="html_6c9f6815448049c9b3b73da71ac7be32" style="width: 100.0%; height: 100.0%;"><h3 style='color:darkblue'><strong>Taormina</strong></h3> <div id="my-pics" class="carousel slide" data-ride="carousel" style="width:500px;margin:auto;">               <ol class="carousel-indicators">             <li data-target="#my-pics" data-slide-to="0" class="active"></li>             <li data-target="#my-pics" data-slide-to="1"></li>             <li data-target="#my-pics" data-slide-to="2"></li>             </ol>               <div class="carousel-inner" role="listbox">               <div class="item active">             <h5>Spiaggia Taormina </h5>             <img src=https://afar-production.imgix.net/uploads/syndication/holland_americas/images/4MPxfZ8TCd/original_original_Catania.Taormina.AGE.RM.crop.jpg?w=750&h=563&fit=crop>             </div>               <div class="item">             <h5>The amazing Ancient Greek Theatre built in the 3rd century BC </h5>             <img src=theater.JPG>             </div>               <div class="item">             <h5>The breathtaking view from of the coastline from the gardens (Villa Comunale) </h5>             <img src=taormina_garden.jpeg>                          </div>                          </div>               <a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">             <span class="icon-prev" aria-hidden="true"></span>             <span class="sr-only">Previous</span>             </a>             <a class="right carousel-control" href="#my-pics" role="button" data-slide="next">             <span class="icon-next" aria-hidden="true"></span>             <span class="sr-only">Next</span>             </a>              </div></div>`)[0];
+            popup_496e757b7ffa4582943577cf36cd82c8.setContent(html_6c9f6815448049c9b3b73da71ac7be32);
+        
+
+        marker_c15e901b0e884f91b8c1c0c25f3a7397.bindPopup(popup_496e757b7ffa4582943577cf36cd82c8)
+        ;
+
+        
+    
+    
+            var marker_946c024ba43c486a9d2a9e652cdd76d9 = L.marker(
+                [38.680029, 15.897051],
+                {}
+            ).addTo(feature_group_ecad8719a5554f66821ec04e5705f25b);
+        
+    
+            var icon_4dc6ea5f3dc849449b97b362d840d385 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_946c024ba43c486a9d2a9e652cdd76d9.setIcon(icon_4dc6ea5f3dc849449b97b362d840d385);
+        
+    
+        var popup_134260d0d0f14ee2b81783fecd8f151e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6c26589640742d0b438d648b0a541c7 = $(`<div id="html_a6c26589640742d0b438d648b0a541c7" style="width: 100.0%; height: 100.0%;"><h3 style='color:darkblue'><strong>Tropea</strong></h3> <div id="my-pics" class="carousel slide" data-ride="carousel" style="width:500px;margin:auto;">               <ol class="carousel-indicators">             <li data-target="#my-pics" data-slide-to="0" class="active"></li>             <li data-target="#my-pics" data-slide-to="1"></li>             <li data-target="#my-pics" data-slide-to="2"></li>             </ol>               <div class="carousel-inner" role="listbox">               <div class="item active">             <h5>Tropea - ‘La perla del Tirreno’ </h5>             <img src=https://www.fodors.com/wp-content/uploads/2018/05/reasons-to-visit-tropea-HERO.jpg>             </div>               <div class="item">             <h5>Balcony view of Tropea Beach </h5>             <img src=tropea.jpeg>             </div>               <div class="item">             <h5>Tropea Church in the sunset twilight </h5>             <img src=https://media-cdn.tripadvisor.com/media/photo-s/17/22/e2/b8/santa-maria-dell-isola.jpg>                          </div>                          </div>               <a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">             <span class="icon-prev" aria-hidden="true"></span>             <span class="sr-only">Previous</span>             </a>             <a class="right carousel-control" href="#my-pics" role="button" data-slide="next">             <span class="icon-next" aria-hidden="true"></span>             <span class="sr-only">Next</span>             </a>              </div></div>`)[0];
+            popup_134260d0d0f14ee2b81783fecd8f151e.setContent(html_a6c26589640742d0b438d648b0a541c7);
+        
+
+        marker_946c024ba43c486a9d2a9e652cdd76d9.bindPopup(popup_134260d0d0f14ee2b81783fecd8f151e)
+        ;
+
+        
+    
+    
+            var marker_7adbe01df59244daa1309255f5d57c4f = L.marker(
+                [41.899626, 12.488144],
+                {}
+            ).addTo(feature_group_ecad8719a5554f66821ec04e5705f25b);
+        
+    
+            var icon_118d8dd4b54e4f9cb9be4c837a61c3cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_7adbe01df59244daa1309255f5d57c4f.setIcon(icon_118d8dd4b54e4f9cb9be4c837a61c3cd);
+        
+    
+        var popup_cddd9b53853b4d6093cdf6aae6e32fd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_451e09ef084f45f08767f51cfd015898 = $(`<div id="html_451e09ef084f45f08767f51cfd015898" style="width: 100.0%; height: 100.0%;"><h3 style='color:darkblue'><strong>Rome</strong></h3> <div id="my-pics" class="carousel slide" data-ride="carousel" style="width:500px;margin:auto;">               <ol class="carousel-indicators">             <li data-target="#my-pics" data-slide-to="0" class="active"></li>             <li data-target="#my-pics" data-slide-to="1"></li>             <li data-target="#my-pics" data-slide-to="2"></li>             </ol>               <div class="carousel-inner" role="listbox">               <div class="item active">             <h5>The beautiful Rome! Here, the most famous of its touristic points, ‘Il Coliseo’ </h5>             <img src=rome_coliseu.jpeg>             </div>               <div class="item">             <h5>Relaxing in the hot Rome summer admiring the beautiful Vittorio Emanuele Monument. </h5>             <img src=vit_ema.JPG>             </div>               <div class="item">             <h5>The beautiful Fontana di Trevi!! </h5>             <img src=https://media-cdn.tripadvisor.com/media/photo-s/14/60/3b/32/fontana-di-trevi.jpg>                          </div>                          </div>               <a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">             <span class="icon-prev" aria-hidden="true"></span>             <span class="sr-only">Previous</span>             </a>             <a class="right carousel-control" href="#my-pics" role="button" data-slide="next">             <span class="icon-next" aria-hidden="true"></span>             <span class="sr-only">Next</span>             </a>              </div></div>`)[0];
+            popup_cddd9b53853b4d6093cdf6aae6e32fd1.setContent(html_451e09ef084f45f08767f51cfd015898);
+        
+
+        marker_7adbe01df59244daa1309255f5d57c4f.bindPopup(popup_cddd9b53853b4d6093cdf6aae6e32fd1)
+        ;
+
+        
+    
+    
+            var marker_82319f4cce844104b43b791dc7589428 = L.marker(
+                [37.917866, 15.992182],
+                {}
+            ).addTo(feature_group_ecad8719a5554f66821ec04e5705f25b);
+        
+    
+            var icon_ccc26eaab3b14a2e958e7aa3a6e51f5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_82319f4cce844104b43b791dc7589428.setIcon(icon_ccc26eaab3b14a2e958e7aa3a6e51f5f);
+        
+    
+        var popup_712273f720a746a2bb30160096ae164f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00c37c3bd7d646b49c0280e8fa037196 = $(`<div id="html_00c37c3bd7d646b49c0280e8fa037196" style="width: 100.0%; height: 100.0%;"><h3 style='color:darkblue'><strong>Palizzi</strong></h3> <div id="my-pics" class="carousel slide" data-ride="carousel" style="width:500px;margin:auto;">               <ol class="carousel-indicators">             <li data-target="#my-pics" data-slide-to="0" class="active"></li>             <li data-target="#my-pics" data-slide-to="1"></li>             <li data-target="#my-pics" data-slide-to="2"></li>             </ol>               <div class="carousel-inner" role="listbox">               <div class="item active">             <h5>The small village of Pallizzi  Marina in Southern Italy </h5>             <img src=rocks.JPG>             </div>               <div class="item">             <h5>The peaceful and beautiful Palizzi Beach </h5>             <img src=spiaggia.JPG>             </div>               <div class="item">             <h5>Il Catello di Palizzi </h5>             <img src=https://www.icastelli.it/uploaded/castelli/1266962176.jpg>                          </div>                          </div>               <a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">             <span class="icon-prev" aria-hidden="true"></span>             <span class="sr-only">Previous</span>             </a>             <a class="right carousel-control" href="#my-pics" role="button" data-slide="next">             <span class="icon-next" aria-hidden="true"></span>             <span class="sr-only">Next</span>             </a>              </div></div>`)[0];
+            popup_712273f720a746a2bb30160096ae164f.setContent(html_00c37c3bd7d646b49c0280e8fa037196);
+        
+
+        marker_82319f4cce844104b43b791dc7589428.bindPopup(popup_712273f720a746a2bb30160096ae164f)
+        ;
+
+        
+    
+</script>
