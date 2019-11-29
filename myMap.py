@@ -1,6 +1,8 @@
 import folium
 import pandas
 
+
+
 data = pandas.read_excel("Italy.xlsx", sheet_name=1)
 
 nam = list(data["Name"])
@@ -25,7 +27,7 @@ fg = folium.FeatureGroup(name="My Map")
 
 for name, lati, logi, photo1, description1, photo2, description2, photo3, description3 in zip(nam, lat, log, pho1, desc1, pho2, desc2, pho3, desc3):
     fg.add_child(folium.Marker(location=[lati, logi],
-    popup= """<h3><strong>""" + name +  """</strong></h3>""" + " " + 
+    popup= """<h3 style="color:darkred"><strong>""" + name +  """</strong></h3>""" + " " + 
     
     """<div id="my-pics" class="carousel slide" data-ride="carousel" style="width:500px;margin:auto;">
 
@@ -73,7 +75,7 @@ for name, lati, logi, photo1, description1, photo2, description2, photo3, descri
 
             </div>""",
 
-    icon=folium.Icon(color='blue')))
+    icon=folium.Icon(color='darkred')))
 
 
 my_map.add_child(fg)
@@ -83,22 +85,7 @@ my_map.save("My_map.html")
 
 
 
-# OLDER VERSION, WITHOUT PULLING DATA FROM TABLE:
 
-# import folium
-# my_map = folium.Map(location=[38, 15], zoom_start=8, tiles="Stamen Terrain")
-
-# fg = folium.FeatureGroup(name="My Map")
-
-# html = """<img src="https://afar-production.imgix.net/uploads/syndication/holland_americas/images/4MPxfZ8TCd/original_original_Catania.Taormina.AGE.RM.crop.jpg?w=750&h=563&fit=crop" alt="Smiley face" >    """
-
-# for coordinades in [([37.851173, 15.299490], "Ciao bello! Questa è spiaggia Taormina" + html ), ([38.680029, 15.897051], "Ciao bello! Questa è la bellisima spiaggia Tropea") ]:
-#     fg.add_child(folium.Marker(location=coordinades[0], popup=coordinades[1], icon=folium.Icon(color='green')))
-
-
-# my_map.add_child(fg)
-
-# my_map.save("My_map.html")
 
 
 
